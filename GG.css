@@ -1,0 +1,249 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to right, #000428, #004e92);
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+  }
+  
+  header nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h2 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+/* General Portfolio Section */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.portfolio-section h3 {
+  font-size: 24px;
+  color: #555;
+  margin-top: 40px;
+}
+
+/* Grid Styling */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Increased from 120px to 200px */
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.portfolio-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: #333; /* Dark background for the footer */
+  color: white;
+  padding: 20px;
+  text-align: center; /* Center text in the footer */
+}
+
+.contact-info, .social-media {
+  margin: 10px 0;
+}
+
+footer a {
+  color: #f4f4f4; /* Light color for links */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Additional styling to ensure links are centered */
+.social-media {
+  display: flex; /* Use flexbox for social media links */
+  justify-content: center; /* Center the links */
+}
+
+.social-media a {
+  margin: 0 10px; /* Spacing between links */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    margin: 10px;
+}
+
+.image-container img {
+    width: 150px; /* Smaller images in the gallery */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    text-align: center; /* Center modal content */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Width of the modal image */
+    max-width: 700px; /* Max width of the modal image */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: rgb(136, 255, 0);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Allow the main content to grow and fill the space */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: center;
+}
+
+.about-section {
+  padding: 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto; /* Center the content */
+}
+
+.profile-pic {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center; /* Center footer text */
+  margin: 20px 0; /* Add some space around the footer */
+}
+
+.contact-info {
+  margin-top: 20px;
+}
